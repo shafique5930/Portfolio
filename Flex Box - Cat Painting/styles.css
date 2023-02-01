@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(10, 10, 35);
+}
+.container {
+  background-color: rgb(15, 15, 45);
+  width: 100%;
+  height: 100px;
+}
+.container h1 {
+  color: rgb(255, 255, 2);
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 25px;
+  /* box-shadow: 2px 2px 2px 1px rgb(255, 255, 255); */
+  margin: 0;
+}
+p {
+  color: rgb(15, 15, 45);
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: inline-block;
+  background-color: rgb(255, 255, 2);
+  margin-top: -50px;
+  font-size: 1.4em;
+  width: 100%;
+}
+.gallery {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow: hidden;
+}
+.item {
+  text-align: center;
+  margin: 5px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+img {
+  width: 600px;
+  height: 424px;
+  border-radius: 20px;
+}
+.matters {
+  color: #d87093;
+  text-shadow: #d87093;
+  text-decoration: solid;
+}
