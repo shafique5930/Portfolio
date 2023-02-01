@@ -1,0 +1,72 @@
+h1 {
+  text-align: center;
+}
+.marker {
+  height: 25px;
+  width: 200px;
+  /* In the last project, you set the margin area of elements separately with properties like margin-top and margin-left. The margin shorthand property makes it easy to set multiple margin areas at the same time.
+
+To center your marker on the page, set its margin property to auto. This sets margin-top, margin-right, margin-bottom, and margin-left all to auto. */
+  margin: auto;
+  /* While you have three separate marker div elements, they look like one big rectangle. You should add some space between them to make it easier to see each element.
+
+When the shorthand margin property has two values, it sets margin-top and margin-bottom to the first value, and margin-left and margin-right to the second value.
+
+In your .marker CSS rule, set the margin property to 10px auto. */
+  margin: 10px auto;
+}
+.red {
+  background: linear-gradient(
+    180deg,
+    rgb(122, 74, 14),
+    rgb(245, 62, 113),
+    rgb(162, 27, 27)
+  );
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+/* DEFAULT GRADIENT DIRECTION 
+If no gradientDirection argument is provided to the linear-gradient function, it arranges colors from top to bottom, or along a 180 degree line, by default. */
+
+/* Even without the color-stops, you might have noticed that the colors for the green marker transition at the same points as the red marker. The first color is at the start (0%), the second is in the middle (50%), and the last is at the end (100%) of the gradient line. */
+.green {
+  background: linear-gradient(#55680d, #71f53e, #116c31);
+  box-shadow: 0 0 20px 0 #3b7e20cc;
+}
+
+.blue {
+  background: linear-gradient(
+    hsl(186, 76%, 16%),
+    hsl(223, 90%, 60%),
+    hsl(240, 56%, 42%)
+  );
+  box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
+/* There are two main color models: the additive RGB (red, green, blue) model used in electronic devices, and the subtractive CMYK (cyan, magenta, yellow, black) model used in print. */
+.container {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0;
+}
+/* A function is a piece of code that can take an input and perform a specific action. The CSS rgb function accepts values, or arguments, for red, green, and blue, and produces a color:
+
+rgb(red, green, blue);
+Each red, green, and blue value is a number from 0 to 255. 0 means that there's 0% of that color, and is black. 255 means that there's 100% of that color.
+
+In the .one CSS rule, replace the color keyword red with the rgb function. For the rgb function, set the value for red to 255, the value for green to 0, and the value for blue to 0. */
+/* 
+Two colors that are opposite from each other on the color wheel are called complementary colors. If two complementary colors are combined, they produce gray. But when they are placed side-by-side, these colors produce strong visual contrast and appear brighter.
+*/
+.sleeve {
+  width: 110px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+  border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+.cap {
+  width: 60px;
+  height: 25px;
+}
+.cap,
+.sleeve {
+  display: inline-block;
+}
