@@ -1,0 +1,113 @@
+:root {
+  --bg-color: rgba(247, 242, 241, 0.8);
+  --bg-cont-fluid: rgba(255, 111, 0, 0.4);
+  --bg-cont: rgba(63, 178, 240, 0.4);
+  --hdg-color: rgba(154, 29, 250, 0.4);
+  --txt-color: rgba(0, 255, 255, 0.4);
+}
+html {
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-color);
+}
+.container-fluid {
+  width: 90vw;
+  height: 100%;
+  background-color: var(--bg-cont-fluid);
+  padding: 50px;
+  border: 20px solid var(--bg-cont);
+  margin: 70px 20px 0 50px;
+}
+.container,
+.round {
+  padding: 10px;
+  background-color: var(--bg-cont);
+  width: 40%;
+  height: 90%;
+  margin: 10px auto;
+
+  color: var(--txt-color);
+}
+.container {
+  border: 30px solid green;
+  margin-top: 10px;
+  padding: 20px;
+}
+.round {
+  border-radius: 100%;
+  /* border: 1px solid green; */
+  width: 250px;
+  height: 250px;
+}
+.center {
+  margin: 5px auto;
+  display: block;
+  padding: 20px;
+  /* margin-left: 20px; */
+}
+.relation {
+  position: absolute;
+  width: 200px;
+  padding: 20px;
+}
+/* Pink Flower */
+.relative-left {
+  left: 862px;
+  top: 100px;
+  background-color: var(--hdg-color);
+  /* border: 5px solid var(--bg-cont); */
+}
+.relative-left1 {
+  left: 1016px;
+  top: 100px;
+  background-color: var(--hdg-color);
+  /* border: 5px solid var(--bg-cont); */
+}
+.relative-left2 {
+  left: 939px;
+  top: 226px;
+  background-color: var(--hdg-color);
+  /* border: 5px solid var(--bg-cont); */
+}
+
+.relative-right {
+  right: 568px;
+  top: 243px;
+  background-color: var(--bg-cont);
+  /* border: 5px solid var(--bg-cont-fluid); */
+}
+.relative-right1 {
+  right: 100px;
+  top: 100px;
+  background-color: var(--bg-cont);
+  /* border: 5px solid var(--bg-cont-fluid); */
+}
+.relative-right2 {
+  right: 100px;
+  top: 100px;
+  background-color: var(--bg-cont);
+  /* border: 5px solid var(--bg-cont-fluid); */
+}
+.relative-bottom-left {
+  left: 203px;
+  bottom: 100px;
+  background-color: var(--bg-cont-fluid);
+  /* border: 5px solid var(--bg-cont); */
+}
+.relative-bottom-right {
+  right: 100px;
+  bottom: 100px;
+  background-color: var(--hdg-color);
+  /* border: 5px solid var(--bg-cont); */
+}
+.relative-bottom {
+  left: 160px;
+  bottom: 100px;
+}
+.relative-bottom1 {
+  left: 250px;
+  bottom: 100px;
+}

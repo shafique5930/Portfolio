@@ -1,0 +1,250 @@
+:root {
+  --txt-color: white;
+  --black: black;
+}
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #dfdfe2;
+}
+header {
+  height: 100vh;
+  width: 100%;
+  /* background: url(/styles/assets/pexels-tirachard-kumtanom-733853.jpg) center */
+  /* no-repeat; */
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--black);
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  border: 2px groove rgb(61, 61, 58);
+}
+
+nav .logo {
+  margin-right: 20px;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 2px 3px 2px rgb(191, 48, 48);
+  font-style: italic;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.ul-flex {
+  display: flex;
+}
+
+.li-none {
+  list-style: none;
+  margin-right: 10px;
+}
+.nav-logo {
+  text-decoration: none;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+#myHeaderVideo {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(204, 153, 0); */
+  background-color: #dfdfe2;
+  opacity: 0.9;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.bg-color,
+.border,
+.b-shadow {
+  background-color: rgba(41, 34, 28, 0.2);
+  border: 0.2px groove rgb(14, 14, 14);
+  box-shadow: 0px 5px 0px rgba(188, 146, 106, 0.2), 0px 0px 8px white;
+  border-radius: 20px;
+}
+.header-content {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  padding: 20px 30px;
+}
+.hero-heading {
+  color: yellow;
+  font-size: 50px;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+.span-text {
+  color: red;
+  font-style: italic;
+  text-shadow: 3px 3px 3px black, 2px 1px 0px rgb(188, 148, 106);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.news-letter form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+  max-width: 100%;
+  width: 380px;
+  margin-top: 20px;
+}
+.news-letter form input:first-child {
+  display: inline-block;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid yellow;
+  outline: none;
+  border-radius: 30px;
+}
+.btn,
+.last-child {
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: black;
+  top: 6px;
+  right: 6px;
+  box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+  color: white;
+  font-weight: bold;
+}
+.last-child {
+  position: absolute;
+}
+.hover-effect:hover {
+  color: black;
+  background-color: yellow;
+}
+.main {
+  width: 100%;
+  padding: 20px 0px;
+  background-color: rgba(10, 10, 10, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: self-start;
+  border: 0.5px groove rgb(13, 13, 13);
+  margin: 5px;
+  border-radius: 10px;
+}
+.img-50 {
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+}
+.hero-image,
+.about-text {
+  width: 45%;
+  justify-content: space-around;
+  margin: 30px;
+  padding: 20px;
+  height: 400px;
+}
+.hero-image img {
+  width: 530px;
+}
+.fs-1 {
+  font-size: 1rem;
+}
+.fs-2 {
+  font-size: 1.5rem;
+}
+.fs-3 {
+  font-size: 2rem;
+}
+.fs-4 {
+  font-size: 2.5rem;
+}
+.center {
+  display: block;
+  margin: 10px auto;
+}
+.ls {
+  word-spacing: 2px;
+}
+.bg-black {
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  color: yellow;
+}
+.mt-1,
+.mb-1 {
+  margin-top: 1rem;
+}
+.justify {
+  text-align: justify;
+}
+.flex {
+  display: flex;
+}
+.flex-child {
+  width: 25%;
+  margin: 1rem;
+}
+
+/* Footer */
+.footer-wrapper {
+  background-color: #dfdfe2;
+  width: 100%;
+}
+.container {
+  padding: 20px 15%;
+}
+.footer-inner {
+  margin: 30px auto;
+}
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.footer-flex div {
+  width: 33%;
+  /* border: 1px solid black; */
+  align-content: center;
+}
+.footer-flex div ul li {
+  list-style: none;
+  padding: 10px;
+  text-decoration: underline;
+}
+.footer-flex div h6 {
+  padding: 5px;
+  text-decoration: underline;
+}
+.smns {
+  margin: auto;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-items: self-end;
+}
+.smns a {
+  text-align: center;
+  margin: 10px;
+}

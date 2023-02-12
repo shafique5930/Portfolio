@@ -1,0 +1,165 @@
+html {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+:root {
+  --MarineBlue: hsl(213, 96%, 18%);
+  --PurplishBlue: #473dff;
+  --PastelBlue: hsl(228, 100%, 84%);
+  --LightBlue: hsl(206, 94%, 87%);
+  --StrawberryRed: hsl(354, 84%, 57%);
+}
+* {
+  box-sizing: border-box;
+}
+/* Navbar */
+.nav-logo {
+  width: 50px;
+}
+.nav-link {
+  border-radius: 20px;
+}
+.nav-item:hover {
+  background-color: var(--PastelBlue);
+}
+/* icon customization with theme */
+.fa-solid {
+  color: var(--MarineBlue);
+  margin-right: 10px;
+}
+.m-tb {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.hero {
+  background: url("/Assets/pexels-buro-millennial-1438081.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)) left center
+      no-repeat;
+  width: 100%;
+  height: 750px;
+  background-blend-mode: overlay;
+}
+.hero h2,
+.hero p {
+  position: absolute;
+  color: var(--PurplishBlue);
+  display: inline-block;
+  width: 500px;
+  background-color: #ffffff;
+  top: 585px;
+  left: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  height: auto;
+  border: 2px groove black;
+  height: 200px;
+}
+.absolute {
+  position: absolute;
+  top: 725px;
+  left: 568px;
+}
+h1,
+h2,
+h3 {
+  color: var(--PurplishBlue);
+  font-size: 24px;
+  font-weight: 900;
+}
+p {
+  color: var(--MarineBlue);
+  font-size: 20px;
+  text-align: justify;
+}
+.showcase-flex,
+.faculty-flex {
+  display: flex;
+}
+
+/* Buttons */
+.link-btn {
+  display: inline-block;
+  width: auto;
+  background-color: var(--PastelBlue);
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.link-btn:hover {
+  background-color: var(--MarineBlue);
+  color: var(--LightBlue);
+}
+.faculty-flex {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.appt {
+  font-size: 1rem;
+}
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.profile-dp {
+  width: 100px;
+}
+.adm-frm01 {
+  flex-direction: column;
+  justify-content: space-around;
+}
+label {
+  width: 300px;
+  display: inline-block;
+}
+input[type="text"],
+input[type="date"],
+input[type="radio"],
+textarea {
+  display: inline-block;
+  width: 600px;
+  border-radius: 5px;
+  padding: 5px;
+  /* background-color: var(--LightBlue); */
+  outline: none;
+}
+.wrapper {
+  width: 100vw;
+  margin: 10px auto;
+  width: 650px;
+  border: 1px groove var(--LightBlue);
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  border: 1px groove var(--LightBlue);
+}
+.adm-frm-dtl {
+  padding: 30px;
+  margin-left: 52px;
+  width: 400px;
+}
+.admission,
+.footer-flex,
+.adm-frm01 {
+  display: flex;
+}
+.btn-center {
+  margin: 0 auto;
+  display: inline-block;
+}
+.faculty-flex {
+  padding: 30px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--LightBlue);
+  width: 1100px;
+  margin: 30px auto;
+}
+.highlt {
+  padding: 10px;
+  background-color: var(--PurplishBlue);
+  color: var(--LightBlue);
+  border-radius: 10px;
+  border: 0.5px solid black;
+  margin-bottom: 30px;
+}
