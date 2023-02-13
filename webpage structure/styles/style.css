@@ -62,6 +62,9 @@ nav .logo {
   border-radius: 30px;
   font-weight: bold;
 }
+.dwn-icon {
+  margin-right: 5px;
+}
 #myHeaderVideo {
   position: absolute;
   top: -1px;
@@ -74,7 +77,6 @@ nav .logo {
   object-fit: cover;
   z-index: -1;
 }
-
 .bg-color,
 .border,
 .b-shadow {
@@ -186,6 +188,12 @@ nav .logo {
 .ls {
   word-spacing: 2px;
 }
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1rem;
+}
 .bg-black {
   background-color: black;
   padding: 10px 20px;
@@ -247,4 +255,62 @@ nav .logo {
 .smns a {
   text-align: center;
   margin: 10px;
+}
+.smns a:hover {
+  padding-right: 3px;
+  color: red;
+}
+.gallery {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow: hidden;
+  background-color: #dfdfe2;
+}
+.item {
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.item img {
+  width: 600px;
+  height: 424px;
+  border-radius: 5px;
+  border: 1px groove yellowgreen;
+}
+/* 
+ */
+.flex-heading {
+  color: black;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #dfdfe2;
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+}
+.flex-bg {
+  /* background-color: rgb(15, 15, 45); */
+  width: 100%;
+  height: 100px;
+}
+.matters {
+  color: #d87093;
+  text-shadow: #d87093;
+  text-decoration: solid;
+  display: inline-block;
+}
+.flex-p {
+  color: rgb(15, 15, 45);
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: block;
+  background-color: rgb(255, 255, 2);
+  margin: 0 auto;
+  font-size: 1.4em;
+  width: 30%;
 }
