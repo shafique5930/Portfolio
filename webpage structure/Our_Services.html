@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="lorem25">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.js">
     <meta name="description" content="lorem25">
     <script src="https://kit.fontawesome.com/a9e960e13f.js" crossorigin="anonymous"></script>
 
@@ -15,17 +18,30 @@
 </head>
 <main id="documentBody">
     <!-- Header Section Starts  -->
-    <nav>
-        <a href="" class="nav-logo">
-            <h2 class="logo">Port<span class="span-text">f</span>olio</h2>
-        </a>
-        <ul class="ul-flex">
-            <li class="li-none"><a class="nav-link hover-effect" href="/index.html">Home</a></li>
-            <li class="li-none"><a class="nav-link hover-effect" href="/Our_Services.html">Our Projects</a></li>
-            <li class="li-none"><a class="nav-link hover-effect" href="/About_Us.html">About Us</a></li>
-        </ul>
-        <a class="btn hover-effect" href=""><i style="margin-right: 5px" class="fa-solid fa-download">Download</i>
-        </a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="" class="nav-logo navbar-brand">
+                <h2 class="logo">Port<span class="span-text">f</span>olio</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="ul-flex navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="li-none nav-item"><a class="nav-link hover-effect" href="/index.html">Home</a>
+                    </li>
+                    <li class="li-none nav-item"><a class="nav-link hover-effect" href="/Our_Services.html">Our
+                            Projects</a></li>
+                    <li class="li-none nav-item"><a class="nav-link hover-effect" href="/About_Us.html">About
+                            Us</a></li>
+                </ul>
+                <a class="btn hover-effect" href=""><i style="margin-right: 5px"
+                        class="fa-solid fa-download">Download</i>
+                </a>
+            </div>
+        </div>
     </nav>
     </div>
     <!-- Header Section Ends  -->
@@ -80,7 +96,7 @@
     <footer>
 
         <div class="footer-wrapper">
-            <div class="container">
+            <div class="wrap">
                 <hr>
                 <div class="footer-inner">
                     <p class="fs-1 mb-1">Lorem ipsum dolor sit amet consectetur adipisicingelit. Consectetur repellendus
@@ -136,12 +152,12 @@
                 </div>
                 <hr>
                 <div class="smns">
-                    <a href=""> <i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-skype"></i></a>
+                    <a href=""> <i class="fa-brands fa-facebook gr"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter gr"></i></a>
+                    <a href=""><i class="fa-brands fa-skype gr"></i></a>
                     <a href="https://github.com/shafique5930"><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin gr"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp gr"></i></a>
                 </div>
             </div>
         </div>

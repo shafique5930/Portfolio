@@ -1,222 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/a9e960e13f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./bootstrap.min.css" />
-    <title>Millenium High School</title>
-  </head>
-  <body>
-    <!-- header section -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
-            class="nav-logo"
-            src="./Assets/logo/icons8-school-100.png"
-            alt="College_logo"
-          />
-          RCE
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                <i class="fa-solid fa-house"></i>Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#showcase"
-                ><i class="fa-solid fa-graduation-cap"></i>Admissions
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                <i class="fa-solid fa-person-chalkboard"></i>Training</a
-              >
-            </li>
-            <!--  -->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                <i class="fa-solid fa-info"></i>About Us</a
-              >
-            </li>
-            <!--  -->
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-primary" type="submit">
-              Search
-            </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/a9e960e13f.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script src="module.js" type="module"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./bootstrap.min.css" />
+  <title>Millenium High School</title>
+</head>
+
+<body>
+  <!-- header section -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="nav-logo" src="./Assets/logo/icons8-school-100.png"
+          alt="College_logo" />
+        RCE
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fa-solid fa-house"></i>Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#showcase"><i
+                class="fa-solid fa-graduation-cap"></i>Admissions
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fa-solid fa-person-chalkboard"></i>Training</a>
+          </li>
+          <!--  -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fa-solid fa-info"></i>About Us</a>
+          </li>
+          <!--  -->
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-primary" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- main section  -->
+  <main>
+    <div class="container hero">
+      <h2>The College System</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+        iure nisi perspiciatis accusantium voluptates veniam!
+      </p>
+      <a href="" class="link-btn absolute">Register Now</a>
+    </div>
+
+    <!-- showcase section -->
+    <section class="m-tb" id="showcase">
+      <div class="container showcase-flex">
+        <div>
+          <img src="./Assets/undraw_business_chat_re_gg4h.svg" class="w-75" alt="" />
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            pariatur, at possimus ipsum sed eligendi repellendus earum? Vel
+            repellat consectetur, dolor delectus itaque maxime facilis?
+          </p>
+          <a class="link-btn" href="">Register Now</a>
+        </div>
+      </div>
+    </section>
+    <!-- Faculty Staff Section  -->
+
+    <section class="m-tb" id="faculty-section">
+      <div class="faculty-flex mt-tb">
+        <div style="width: 30%">
+          <img src="./Assets/Avatar/undraw_Female_avatar_re_l6cx.png" alt="" class="profile-dp" />
+          <h4>Prof. Sara Ali Kamal</h4>
+          <p class="appt">Vice Chancellor</p>
+          <a class="link-btn" href="">Read More</a>
+        </div>
+        <div style="width: 30%">
+          <img class="profile-dp" src="./Assets/Avatar/undraw_Profile_pic_re_iwgo.png" alt="" />
+          <h4>Prof Azra Khan</h4>
+          <p class="appt">Dean Eduction Department</p>
+          <a class="link-btn" href="">Read More</a>
+        </div>
+        <div style="width: 30%">
+          <img src="./Assets/Avatar/undraw_Male_avatar_re_y880 (1).png" alt="" class="profile-dp" />
+          <h4>Prof. Dr Kamal Ahmed</h4>
+          <p class="appt">Dean Faculty of Scinces</p>
+          <a class="link-btn" href="">Read More</a>
+        </div>
+
+        <div style="width: 30%">
+          <img src="./Assets/Avatar/undraw_Male_avatar_re_y880.png" alt="" class="profile-dp" />
+          <h4>Mr. Mehmood Khan</h4>
+          <p class="appt">Dean Department of Modern Studies</p>
+          <a class="link-btn" href="">Read More</a>
+        </div>
+        <div style="width: 30%">
+          <img src="./Assets/Avatar/undraw_Pic_profile_re_7g2h.png" alt="" class="profile-dp" />
+          <h4>Prof. D. K Khana</h4>
+          <p class="appt">Dean Department of Applied Sciences</p>
+          <a class="link-btn" href="">Read More</a>
+        </div>
+        <div style="width: 30%">
+          <img src="./Assets/Avatar/undraw_Pic_profile_re_7g2h.png" alt="" class="profile-dp" />
+          <h4>Prof. D. K Khana</h4>
+          <p class="appt">Dean Department of Applied Sciences</p>
+          <a class="link-btn" href="">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- admisson Form Section  -->
+    <section id="adm-frm" class="m-tb">
+      <div class="admission">
+        <div class="adm-frm-dtl">
+          <h4 class="text-center"><span class="highlt"> Why Us </span></h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod,
+            eos! Illum consectetur atque sed, fugit quas vitae eum earum
+            reprehenderit provident voluptates officia, debitis aut.
+          </p>
+          <a class="link-btn btn-center" href="">Enroll Now</a>
+        </div>
+        <div class="wrapper">
+          <h4 class="text-center">Admission Form for Admissions</h4>
+          <form class="adm-frm01" action="">
+            <label for="first-name">First Name:
+              <input type="text" name="first-name" id="first-name" /></label>
+            <label for="last-name">Last Name: <input type="text" name="last-name" id="last-name" /></label>
+            <label for="dob">Date of Birth: <input type="date" name="date" id="dob" /></label>
+            <label for="gender">Male:<input type="radio" name="gender" id="male" />
+              Female:<input type="radio" name="gender" id="Female" /></label>
+            <label for="address">Address: <input type="text" name="address" id="address" /></label>
+            <label for="bio">Any Other Detail:
+              <textarea name="" id="bio" cols="10" rows="10"></textarea>
+            </label>
           </form>
         </div>
       </div>
-    </nav>
-    <!-- main section  -->
-    <main>
-      <div class="container hero">
-        <h2>The College System</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-          iure nisi perspiciatis accusantium voluptates veniam!
-        </p>
-        <a href="" class="link-btn absolute">Register Now</a>
-      </div>
+    </section>
+  </main>
 
-      <!-- showcase section -->
-      <section class="m-tb" id="showcase">
-        <div class="container showcase-flex">
-          <div>
-            <img
-              src="./Assets/undraw_business_chat_re_gg4h.svg"
-              class="w-75"
-              alt=""
-            />
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              pariatur, at possimus ipsum sed eligendi repellendus earum? Vel
-              repellat consectetur, dolor delectus itaque maxime facilis?
-            </p>
-            <a class="link-btn" href="">Register Now</a>
-          </div>
-        </div>
-      </section>
-      <!-- Faculty Staff Section  -->
+  <!-- footer under constr -->
 
-      <section class="m-tb" id="faculty-section">
-        <div class="faculty-flex mt-tb">
-          <div style="width: 30%">
-            <img
-              src="./Assets/Avatar/undraw_Female_avatar_re_l6cx.png"
-              alt=""
-              class="profile-dp"
-            />
-            <h4>Prof. Sara Ali Kamal</h4>
-            <p class="appt">Vice Chancellor</p>
-            <a class="link-btn" href="">Read More</a>
-          </div>
-          <div style="width: 30%">
-            <img
-              class="profile-dp"
-              src="./Assets/Avatar/undraw_Profile_pic_re_iwgo.png"
-              alt=""
-            />
-            <h4>Prof Azra Khan</h4>
-            <p class="appt">Dean Eduction Department</p>
-            <a class="link-btn" href="">Read More</a>
-          </div>
-          <div style="width: 30%">
-            <img
-              src="./Assets/Avatar/undraw_Male_avatar_re_y880 (1).png"
-              alt=""
-              class="profile-dp"
-            />
-            <h4>Prof. Dr Kamal Ahmed</h4>
-            <p class="appt">Dean Faculty of Scinces</p>
-            <a class="link-btn" href="">Read More</a>
-          </div>
+  <footer></footer>
+</body>
 
-          <div style="width: 30%">
-            <img
-              src="./Assets/Avatar/undraw_Male_avatar_re_y880.png"
-              alt=""
-              class="profile-dp"
-            />
-            <h4>Mr. Mehmood Khan</h4>
-            <p class="appt">Dean Department of Modern Studies</p>
-            <a class="link-btn" href="">Read More</a>
-          </div>
-          <div style="width: 30%">
-            <img
-              src="./Assets/Avatar/undraw_Pic_profile_re_7g2h.png"
-              alt=""
-              class="profile-dp"
-            />
-            <h4>Prof. D. K Khana</h4>
-            <p class="appt">Dean Department of Applied Sciences</p>
-            <a class="link-btn" href="">Read More</a>
-          </div>
-          <div style="width: 30%">
-            <img
-              src="./Assets/Avatar/undraw_Pic_profile_re_7g2h.png"
-              alt=""
-              class="profile-dp"
-            />
-            <h4>Prof. D. K Khana</h4>
-            <p class="appt">Dean Department of Applied Sciences</p>
-            <a class="link-btn" href="">Read More</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- admisson Form Section  -->
-      <section id="adm-frm" class="m-tb">
-        <div class="admission">
-          <div class="adm-frm-dtl">
-            <h4 class="text-center"><span class="highlt"> Why Us </span></h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod,
-              eos! Illum consectetur atque sed, fugit quas vitae eum earum
-              reprehenderit provident voluptates officia, debitis aut.
-            </p>
-            <a class="link-btn btn-center" href="">Enroll Now</a>
-          </div>
-          <div class="wrapper">
-            <h4 class="text-center">Admission Form for Admissions</h4>
-            <form class="adm-frm01" action="">
-              <label for="first-name"
-                >First Name:
-                <input type="text" name="first-name" id="first-name"
-              /></label>
-              <label for="last-name"
-                >Last Name: <input type="text" name="last-name" id="last-name"
-              /></label>
-              <label for="dob"
-                >Date of Birth: <input type="date" name="date" id="dob"
-              /></label>
-              <label for="gender"
-                >Male:<input type="radio" name="gender" id="male" />
-                Female:<input type="radio" name="gender" id="Female"
-              /></label>
-              <label for="address"
-                >Address: <input type="text" name="address" id="address"
-              /></label>
-              <label for="bio"
-                >Any Other Detail:
-                <textarea name="" id="bio" cols="10" rows="10"></textarea>
-              </label>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- footer under constr -->
-
-    <footer></footer>
-  </body>
 </html>
