@@ -1,188 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./bootstrap.min.css" />
-    <script
-      src="https://kit.fontawesome.com/a9e960e13f.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Units in HTML</title>
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-brand navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand text-success" href="#"
-            ><i class="fa-solid fa-tornado"></i>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
-              <li class="nav-item">
-                <a href="#" class="nav-link text-warning">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link text-warning">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link text-warning">Our Services</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link text-warning">Our Products</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link text-warning">About Us</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2 text-success"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/a9e960e13f.js" crossorigin="anonymous"></script>
+  <style>
+    @media only screen and (max-width: 600px) {
+      body {
+        color: orange;
+      }
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: row;
+    }
+  </style>
+
+  <title>Online Book Store</title>
+</head>
+
+<body>
+  <header id="header" class="sticky-top">
+    <nav class="navbar navbar-brand navbar-expand-lg bg-dark" id="nav-bar">
+      <div class="container-fluid">
+        <img id="header-img" src="#" alt="">
+        <a class="navbar-brand text-success" href="#"><i class="fa-solid fa-tornado"></i>
+        </a>
+        <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+            <li class="nav-item">
+              <a href="#main" class="nav-link text-warning">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact_us" class="nav-link text-warning">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#our_services" class="nav-link text-warning">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about_us" class="nav-link text-warning">About Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 text-success" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-warning" type="submit">
+              Search
+            </button>
+          </form>
         </div>
-      </nav>
-    </header>
-    <!-- main -->
-    <main>
-      <section class="margin-tb">
-        <div class="container mt-5">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-8">
-              <img src="/resources/Trendy interface.svg" class="w-75" alt="" />
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 bg-light">
-              <div class="container d-flex flex-column">
-                <div>
-                  <h1 class="fs-2 mt-5">
-                    Your <span class="bg-warning">Online</span> Bookshop
-                  </h1>
-                </div>
-                <div>
-                  <p class="fs-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Consectetur ducimus esse assumenda vel, quia modi blanditiis
-                    porro totam alias doloribus magni maxime in atque
-                    voluptatibus!
-                  </p>
-                  <button
-                    class="btn btn-primary btn-lg btn-warning justify-content-center"
-                  >
-                    Purchase Now
-                  </button>
-                </div>
+      </div>
+    </nav>
+  </header>
+  <!-- main -->
+  <main id="main">
+    <section class="margin-tb">
+      <div class="card mt-5" style="width: 20rem">
+        <iframe id="video" class="img-responsive" width="500" src="https://www.youtube.com/embed/hF9_U3oAmF4"
+          title="this new york bookstore has 18 MILES of books... so let&#39;s go" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-header"> We Sell Better</h5>
+          <p class="card-text"> We Provide one of the best linkage books in the town </p>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-8">
+            <img
+              src="https://images.pexels.com/photos/2556018/pexels-photo-2556018.jpeg?auto=compress&cs=tinysrgb&w=400"
+              class="img-responsive w-75" alt="" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 bg-light">
+            <div class="container d-flex flex-column">
+              <div>
+                <h1 class="fs-2 mt-5">
+                  Your <span class="bg-warning">Online</span> Bookshop
+                </h1>
+              </div>
+              <div>
+                <p class="fs-5">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consectetur ducimus esse assumenda vel, quia modi blanditiis
+                  porro totam alias doloribus magni maxime in atque
+                  voluptatibus!
+                </p>
+                <button class="btn btn-primary btn-lg btn-warning justify-content-center">
+                  Purchase Now
+                </button>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- 2nd Section -->
-      <section class="margin-tb">
-        <div class="container-fluid">
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-4 bg-dark">
-              <div class="container d-flex flex-column">
-                <div class="container">
+      </div>
+    </section>
+    <!-- 2nd Section -->
+    <section class="margin-tb" id="our_services">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 bg-dark">
+            <div class="container d-flex flex-column">
+              <div class="container">
                 <h3 class="text-warning mt-5 fs-2 p-2">Our Story</h3>
-              <p class="text-warning fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt blanditiis porro perferendis vitae. Porro, dolorum vero? Mollitia, ut? Vitae quaerat voluptatum sequi officia, suscipit asperiores </p>
-              <button class="btn btn-warning mb-3">
-                Read More
-              </button>
-            </div>
-              </div>
-            </div>
-              <div class="col-12 col-md-6 col-lg-8 bg-dark">
-                <img src="/resources/Celebration.svg" class="w-75 text-right d-sm-none d-md-block " alt="our-story">
+                <p class="text-warning fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+                  blanditiis porro perferendis vitae. Porro, dolorum vero? Mollitia, ut? Vitae quaerat voluptatum sequi
+                  officia, suscipit asperiores </p>
+                <button class="btn btn-warning mb-3">
+                  Read More
+                </button>
               </div>
             </div>
           </div>
+          <div class="col-12 col-md-6 col-lg-8 bg-dark">
+            <img
+              src="https://images.pexels.com/photos/14830457/pexels-photo-14830457.jpeg?auto=compress&cs=tinysrgb&w=400"
+              class="w-75 text-right d-sm-none d-md-block img-responsive" alt="our-story">
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- 3rd Section -->
+    <section id="about_us">
+      <div class="container-fluid mt-2">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="d-flex flex-column justify-content-center">
+              <div class="container">
+                <div class="card m-3 bg-dark" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title"> <i class="fa-solid fa-video text-warning"></i> <span
+                        class="bg-warning">Camera & Movie</span></h5>
+
+                    <p class="card-text text-light">Some quick example text to build on the card title and make up the
+                      bulk of the card's content.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="card m-3 bg-dark" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fa-solid fa-video text-warning"></i> <span
+                        class="bg-warning">Camera & Movie</span></h5>
+                    <p class="card-text text-light">Some quick example text to build on the card title and make up the
+                      bulk of the card's content.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+
+                <div class="card m-3" style="width: 18rem;">
+                  <div class="card-body bg-dark">
+                    <h5 class="card-title"><i class="fa-solid fa-video text-warning"></i> <span
+                        class="bg-warning">Camera & Movie</span></h5>
+                    <p class="card-text text-light  ">Some quick example text to build on the card title and make up the
+                      bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-12 col-md-6 col-lg-6">
+            <div>
+              <h3 class="fs-3 text-center p-2">How it <span class="bg-warning">Works?</span></h3>
+              <p class="fs-5 text-center p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque eveniet
+                illum ratione fugit sapiente similique aliquid pariatur id saepe fugiat!</p>
+              <img src="/resources/Pomodoro technique.svg" class="w-75" alt="">
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+    <section id="contact_us">
+      <section id="contact_us">
+        <div class="card bg-dark mx-auto p-5" style="width: 30rem ">
+          <h3 class="card-header d-block bg-warning text-center">Contact Us</h3>
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <label for="name"><input class="mt-2" type="text" name="name" id="name"></label><br>
+            <label for="email"><input class="mt-2" type="email" name="email" id="email"
+                placeholder="abc@xyz.com"></label><br>
+
+            <input class="btn btn-warning btn-block mt-2" type="submit" value="Process" id="submit">
+
+          </form>
         </div>
       </section>
-<!-- 3rd Section -->
-<section>
-  <div class="container-fluid mt-2">
-<div class="row">
-<div class="col-12 col-md-6 col-lg-6">
-<div class="d-flex flex-column justify-content-center">
-  <div  class="container">
-    <div class="card m-3 bg-dark" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title"> <i class="fa-solid fa-video text-warning"></i> <span class="bg-warning">Camera & Movie</span></h5>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer>
 
-        <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="card m-3 bg-dark" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title"><i class="fa-solid fa-video text-warning"></i> <span class="bg-warning">Camera & Movie</span></h5>
-        <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-       
-      </div>
-    </div>
-  </div>
-  <div class="container">
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
 
-    <div class="card m-3" style="width: 18rem;">
-      <div class="card-body bg-dark">
-        <h5 class="card-title"><i class="fa-solid fa-video text-warning"></i> <span class="bg-warning">Camera & Movie</span></h5>
-        <p class="card-text text-light  ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-
-<div class="col-12 col-md-6 col-lg-6">
-<div>
-  <h3 class="fs-3 text-center p-2">How it <span class="bg-warning">Works?</span></h3>
-  <p class="fs-5 text-center p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque eveniet illum ratione fugit sapiente similique aliquid pariatur id saepe fugiat!</p>
-  <img src="/resources/Pomodoro technique.svg" class="w-75" alt="">
-</div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-  </div>
-</section>
-    </main>
-    <!-- footer -->
-    <footer>
-      
-    </footer>
-    <script src="bootstrap.min.js"></script>
-  </body>
 </html>
